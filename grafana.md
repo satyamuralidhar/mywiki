@@ -15,7 +15,7 @@
 
     $ kubectl edit svc/cusgrafsvc -o yaml
 
-<img src="grafana/garf1.png"  width="30%" height="10%">
+<img src="grafana/garf1.png"  width="50%" height="20%">
 
     decode the secret value of garfana for login
 

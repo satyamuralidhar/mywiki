@@ -4,7 +4,7 @@
 
     $  helm search repo prometheus-community
     
-![image1](prom/promvalues.png)
+<img src="prom/promvalues.png"  width="50%" height="20%">
     
     $ kubectl create ns dop
     
@@ -25,7 +25,7 @@
     
 * update the nodeport value to 31001
 
-![image2](prom/prom1.png)
+<img src="prom/prom1.png"  width="50%" height="20%">
 
     $ kubectl get cm 
 
@@ -33,4 +33,4 @@
 
 * Update the target value using nodeport and ip
 
-![image3](prom/prom2.png)
+<img src="prom/prom2.png"  width="50%" height="20%">
