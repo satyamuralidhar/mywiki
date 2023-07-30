@@ -1,10 +1,14 @@
     $ helm show values bitnami/kafka > kafka.yaml
-    
+
+<img src="kafka/kfk1.png"  width="50%" height="20%">
+
+    (or)
+
+    $ helm install kafka bitnami/kafka -f kafka.yaml -set externalAccess.enabled=true -n dop
+
     $ helm show values bitnami/zookeeper > zookeeper.yaml
     
     $ helm install zookeeper bitnami/zookeeper -f zookeeper.yaml -n dop
-
-    $ helm install kafka bitnami/kafka -f kafka.yaml -n dop
 
 
     $ kubectl expose svc/kafka --type=NodePort --name=cuskfksvc --target-port=9092 -n dop
