@@ -21,3 +21,10 @@
 
         $ kubectl edit svc/cuskfksvc -n dop
         $ kubectl edit svc/cuszoosvc -n dop
+
+* update the kafka statefulsets.
+
+        $ kubectl edit sts kafka -n dop
+
+<img src="kafka/kfk2.png"  width="50%" height="20%">
+
