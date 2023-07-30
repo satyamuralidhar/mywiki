@@ -1,4 +1,4 @@
-## **Grafana Installation in WSL: **
+## **Grafana Installation in WSL:**
 
     $ helm repo add grafana https://grafana.github.io/helm-charts
 
