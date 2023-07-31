@@ -18,6 +18,6 @@
 
     $ kubectl exec -it vault-0 -n dop -- vault status
 
-    $ kubectl logs vault-0 -n doo --> to get root key
+    $ kubectl logs vault-0 -n dop --> to get root token and unseal keys
 
     $ kubectl exec -it vault-0 -n dop -- vault operator unseal
