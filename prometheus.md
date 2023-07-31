@@ -34,3 +34,19 @@
 * Update the target value using nodeport and ip
 
 <img src="prom/prom2.png"  width="50%" height="20%">
+
+
+**kafka exporter**
+
+    $ helm search repo prometheus-community | grep -i kafka
+    $ helm install kfk-exporter prometheus-community
+
+    $ kubectl expose svc/kfk-exporter-prometheus-kafka-exporter --type=NodePort --name=cuskfkexporter --target-port=9308 -n dop
+
+**influxdb:**
+
+    $ kubectl expose svc/influx-influxdb --type=NodePort --name=influx --target-port=8086 -n dop
+
+**telegraf:**
+
+    $ kubectl expose svc/influx-influxdb --type=NodePort --name=influx --target-port=8086 -n dop

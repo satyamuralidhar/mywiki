@@ -15,12 +15,13 @@ spec:
     spec:
       containers:
       - name: kafka-manager
-        image: satyamuralidhar/kafka-manager:v1
+        image: satyamuralidhar/kafka-manager:latest
+
         ports:
         - containerPort: 80
         env:
         - name: zk_host
-          value: localhost:2181
+          value: zookeeper.dop:2181
         command:
         - ./bin/kafka-manager
         - -Dhttp.port=80
